@@ -1,0 +1,201 @@
+name: LielsCore
+main: com.lielamar.lielscore.Main
+version: 1.0.0
+author: LielAmar
+description: LielAmar's core-plugin
+
+commands:
+    coresettings:
+        description: Edit Liel's core settings
+        aliases: [core, lielscore]
+    corereload:
+        description: reload the core
+    bypass:
+        description: Enable/Disable bypass mode
+    event:
+        description: Event command
+    perform:
+        description: Perform a command as other players/console
+    spawn:
+        description: Teleport to spawn
+    discord:
+        description: Liel's discord server
+    youtube:
+        description: Liel's youtube channel
+        aliases: [yt]
+    twitter:
+        description: Liel's twitter page
+    countdown:
+        description: Start a countdown
+        aliases: [cd]
+    fly:
+        description: Fly command
+    flyspeed:
+        description: Fly speed command
+        aliases: [speed]
+    gamemode:
+        description: Gamemode command
+        aliases: [gm]
+    gmc:
+        description: Gamemode creative
+    gms:
+        description: Gamemode survival
+    gmx:
+        description: Reload command
+    god:
+        description: Godmod
+        aliases: [godmod]
+    invsee:
+        description: See other's inventory
+        aliases: [inventory, inventorysee]
+    memory:
+        description: Server stats
+    poke:
+        description: Poke command
+    rename:
+        description: Rename an item
+    sayas:
+        description: Say something as someone
+    teleport:
+        description: Teleport somewhere
+        aliases: [tp]
+    tpall:
+        description: Teleport everyone to you
+        aliases: [teleportall]
+    vanish:
+        description: Make yourself invisible
+        aliases: [v]
+    feed:
+        description: Feed players
+    heal:
+        description: Heal players
+ 
+permissions:
+    lielscore.*:
+        description: Permissions to all commands & features in LielAmar's core-plugin
+        default: op
+        children:
+            lielscore.commands.coresettings: true
+            lielscore.commands.corereload: true
+            lielscore.bypass: true
+            lielscore.commands.bypass: true
+            lielscore.commands.bypass.others: true
+            lielscore.commands.event: true
+            lielscore.commands.perform: true
+            lielscore.commands.spawn: true
+            lielscore.commands.countdown: true
+            lielscore.commands.fly: true
+            lielscore.commands.fly.others: true
+            lielscore.commands.flyspeed: true
+            lielscore.commands.flyspeed.others: true
+            lielscore.commands.gamemode: true
+            lielscore.commands.gamemode.others: true
+            lielscore.commands.gmx: true
+            lielscore.commands.god: true
+            lielscore.commands.god.others: true
+            lielscore.commands.invsee: true
+            lielscore.commands.invsee.interact: true
+            lielscore.commands.memory: true
+            lielscore.commands.poke: true
+            lielscore.commands.rename: true
+            lielscore.commands.sayas: true
+            lielscore.commands.teleport: true
+            lielscore.commands.tpall: true
+            lielscore.commands.vanish: true
+            lielscore.commands.vanish.others: true
+            lielscore.commands.vanish.see: true
+            lielscore.commands.feed: true
+            lielscore.commands.heal: true
+    lielscore.commands.coresettings:
+        description: Permissions to edit core settings
+        default: op
+    lielscore.commands.corereload:
+        description: Permissions to reload the core
+        default: op
+    lielscore.bypass:
+        description: Permissions to bypass certain blocks
+        default: op
+    lielscore.commands.bypass:
+        description: Permissions to enable/disable bypass mode
+        default: op
+    lielscore.commands.bypass.others:
+        description: Permissions to enable/disable bypass mode for others
+        default: op
+    lielscore.commands.event:
+        description: Permissions to the event command
+        default: op
+    lielscore.commands.perform:
+        description: Permissions to perform commands as other players/console
+        default: op
+    lielscore.commands.spawn:
+        description: Permissions to teleport to spawn
+        default: op
+    lielscore.commands.countdown:
+        description: Permissions to start a countdown
+        default: op
+    lielscore.commands.fly:
+        description: Permissions to fly
+        default: op
+    lielscore.commands.fly.others:
+        description: Permissions to fly others
+        default: op
+    lielscore.commands.flyspeed:
+        description: Permissions to change speed
+        default: op
+    lielscore.commands.flyspeed.others:
+        description: Permissions to change others' speed
+        default: op
+    lielscore.commands.gamemode:
+        description: Permissions to gamemode
+        default: op
+    lielscore.commands.gamemode.others:
+        description: Permissions to gamemode others
+        default: op
+    lielscore.commands.gmx:
+        description: Permissions to reload server
+        default: op
+    lielscore.commands.god:
+        description: Permissions to god mod
+        default: op
+    lielscore.commands.god.others:
+        description: Permissions to god mod oters
+        default: op
+    lielscore.commands.invsee:
+        description: Permissions to see others' inv
+        default: op
+    lielscore.commands.invsee.interact:
+        description: Permissions to interact with others' inv
+        default: op
+    lielscore.commands.memory:
+        description: Permissions to memory
+        default: op
+    lielscore.commands.poke:
+        description: Permissions to poke
+        default: op
+    lielscore.commands.rename:
+        description: Permissions to rename
+        default: op
+    lielscore.commands.sayas:
+        description: Permissions to sayas
+        default: op
+    lielscore.commands.teleport:
+        description: Permissions to teleport
+        default: op
+    lielscore.commands.tpall:
+        description: Permissions to teleport everyone
+        default: op
+    lielscore.commands.vanish:
+        description: Permissions to vanish
+        default: op
+    lielscore.commands.vanish.others:
+        description: Permissions to vanish others
+        default: op
+    lielscore.commands.vanish.see:
+        description: Permissions to see vanished players
+        default: op
+    lielscore.commands.feed:
+        description: Permissions to feed players
+        default: op
+    lielscore.commands.heal:
+        description: Permissions to heal players
+        default: op

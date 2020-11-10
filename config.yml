@@ -1,0 +1,62 @@
+# =============================================================
+# Thank you for using Liel's Core. If you find any bugs, please
+# add me on discord (Liel Amar#4531) and let me know so I can
+# fix them.
+# =============================================================
+
+# Server Motd
+ServerMotd: "     &e-&6*&e-&6*&e-&6*&e-&6*&e- &6&lLielAmar's Server &e-&6*&e-&6*&e-&6*&e-&6*&e-\n             &eEvents &6&l|&e Tournaments &6&l| &eFun :O"
+
+
+# The server's spawn. If enabled is set to false, players won't
+# be able to do /spawn through THIS plugin, and they won't be
+# teleported upon join, death etc.
+Spawn:
+    enabled: false
+    x: 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+    world: world
+
+# Spawn settings. You can enable and disable each setting as
+# you want.
+# Available settings: First-Join, Every-Join, Respawn, Void
+SpawnSettings:
+    TeleportOnFirstJoin: true
+    TeleportOnEveryJoin: false
+    TeleportOnRespawn: true
+    TeleportOnVoid: false
+    ConnectionSettingsOnSpawnCommand: false
+
+# Connection Settings. You can set each setting as you wish.
+# These settings apply whenever a player joins.
+ConnectionSettings:
+    enabled: false
+    clearinv: false
+    clearpots: false
+    health: 20
+    hunger: 20
+    exp: 0
+    level: 0
+    gamemode: SURVIVAL
+
+# Protection Settings. You can set each setting as you wish.
+# These settings apply whenever you start the server.
+ProtectionSettings:
+    CanPlayersBeDamaged: true
+    CanPlayersPvP: true
+    CanPlayersReceiveFallDamage: true
+    CanPlayersRegen: true
+    CanPlayersInteract: true
+    CanPlayersHungerChange: true
+    CanPlayersBreakBlocks: true
+    CanPlayersPlaceBlocks: true
+    CanPlayersDropItems: true
+    CanPlayersPickupItems: true
+    CanPlayersKeepInventory: false
+    CanMobsSpawn: true
+    CanAnimalsSpawn: true
+    CanWeatherChange: true
+    CanWaterDamagePlayers: false
